@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.bg {
+    margin-top: 50px;
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+
+#imgBg {
+    width: 1500px;
+    height: 100%;
+    background-size: cover;
+}
+
+.inputBotao {
+    margin-top: 120px;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 700px;
+    gap: 100px;
+}
+
+#imagem {
+    width: 200px;
+    height: 50px;
+}
+
+#auto {
+    width: 200px;
+    height: 50px;
+}
+
+
+
