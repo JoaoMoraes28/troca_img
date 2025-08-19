@@ -37,12 +37,13 @@ body {
 #texto {
     text-align: center;
     font-size: 2rem;
+    margin-top: -100px;
 }
 
 .botoes {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 70px;
     width: 700px;
     gap: 100px;
 }
@@ -57,10 +58,7 @@ body {
     height: 50px;
 }
 
-#imgBgCarrosel{
-    position: absolute;
-    width: 1500px;
-    height: 850px;
+.imgBgCarrosel{
     box-shadow: 0 0 16px #000;
     border-radius: 12px;
     background-position: center;
@@ -69,10 +67,7 @@ body {
     animation: slider 12s infinite, fade 4s;
 }
 
-#imgBgCarrossel::after{
-    position: absolute;
-    content: var(--text-description);
-    width: 100%;
+.imgBgCarrossel::after{
     bottom: 0;
     padding-block: 16px;
     background-color: #0009;
@@ -83,21 +78,27 @@ body {
 }
 
 @keyframes slider {
-    0%, 33% {
+    0%, 20% {
         background-image: url(./img/aguia.jpg);
     }
-    34%, 66% {
+    21%, 40% {
         background-image: url(./img/leao.jpg);
     }
-    67%, 100% {
+    41%, 60% {
         background-image: url(./img/crocodilo.jpg);
+    }
+    61%, 80% {
+        background-image: url(./img/macaco.jpg);
+    }
+    81%, 100% {
+        background-image: url(./img/cobra.jpg);
     }
 }
 @keyframes fade {
     0% {
         opacity: 0;
     }
-    15%, 85% {
+    15%, 65% {
         opacity: 1;
     }
     100% {
